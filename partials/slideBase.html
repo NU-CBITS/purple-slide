@@ -1,0 +1,25 @@
+<div id="slide" class="{{ slide.cssClass }}">
+
+  <div id="slideHeader">
+    <div id="slideHeaderTitle" class="{{ slide.header.title.cssClass }}">{{ slide.header.title.render() }}</div>
+    <div id="slideHeaderSubTitle" class="{{ slide.header.subtitle.cssClass }}">{{ slide.header.subtitle.render() }}</div>
+  </div>
+
+  <div id="main">
+    <div id="slideGraphic" class="{{ slide.main.graphic.cssClass }}">{{ slide.main.graphic.render() }}</div>
+    <div id="slideGraphicCaption" class="{{ slide.main.graphic.caption.cssClass }}">{{ slide.main.graphic.caption.render() }}</div>
+    <div id="slideMainContent" class="{{ slide.main.cssClass }}">{{ slide.main.render() }}</div>
+  </div>
+
+  <div id="footer">
+    <div id="slideFooterPreNav" class="{{ slide.footer.prenav.cssClass }}">{{ slide.footer.prenav.render() }}</div>
+    <div id="slideFooterNav" class="{{ slide.footer.nav.cssClass }}">
+      <div id="slideFooterNavHome" class="{{ slide.footer.nav.home.cssClass }}">{{ slide.footer.nav.home.render() }}</div>
+      <div id="slideFooterNavBack" class="{{ slide.footer.nav.back.cssClass }}">{{ slide.footer.nav.back.render() }}</div>
+      <div id="slideFooterNavForward" class="{{ slide.footer.nav.next.cssClass }}">{{ slide.footer.nav.next.render() }}</div>
+      <div id="slideFooterNavEnd" class="{{ slide.footer.nav.end.cssClass }}">{{ slide.footer.nav.end.render() }}</div>
+    </div>
+    <div id="slideFooterPostNav" class="{{ slide.footer.postnav.cssClass }}">{{ slide.footer.postnav.render() }}</div>
+  </div>
+
+</div>
